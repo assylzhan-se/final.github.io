@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecommerce</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="dark-theme.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <div class="top-bar"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <div class="circle me-2"></div>
+        <span class="logo-text">Ecommerce</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="pages/page2.html">Shop</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/page3.html">
+              Cart <span id="cart-count" class="badge bg-primary">0</span>
+            </a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="pages/page5.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/page4.html">Payment</a></li>
+        </ul>
+
+        <form class="d-flex me-3" role="search">
+          <input class="form-control search-bar" type="search" placeholder="Search products..." />
+        </form>
+
+        
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Carousel -->
+  <div id="bannerCarousel" class="carousel slide mx-auto mb-5 rounded" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/banner1.jpg" class="d-block w-100" alt="Banner 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Discover Your Style</h1>
+          <p>Shop the latest trends!</p>
+          <a href="pages/page2.html" class="btn btn-light btn-lg">Shop Now</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/banner2.jpg" class="d-block w-100" alt="Banner 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>New Arrivals</h1>
+          <p>Check out our fresh collection!</p>
+          <a href="pages/page2.html" class="btn btn-light btn-lg">Shop Now</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/banner3.jpg" class="d-block w-100" alt="Banner 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Exclusive Offers</h1>
+          <p>Grab the best deals today!</p>
+          <a href="pages/page2.html" class="btn btn-light btn-lg">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel Arrows -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Product Cards -->
+  <main class="container my-5">
+    <div class="row g-4 justify-content-center" id="product-list">
+      <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+        <div class="card shadow-sm p-3 product">
+          <img src="images/Nike.jpg" class="card-img-top rounded mb-3" alt="Shoes">
+          <h5 class="product-name">Nike Air Zoom</h5>
+          <p class="text-muted mb-2">$120</p>
+          <button class="btn btn-outline-primary w-100 add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+        <div class="card shadow-sm p-3 product">
+          <img src="images/Adidas.jpg" class="card-img-top rounded mb-3" alt="Jacket">
+          <h5 class="product-name">Adidas Winter Jacket</h5>
+          <p class="text-muted mb-2">$180</p>
+          <button class="btn btn-outline-primary w-100 add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+        <div class="card shadow-sm p-3 product">
+          <img src="images/Casio.jpg" class="card-img-top rounded mb-3" alt="Watch">
+          <h5 class="product-name">Casio G-Shock</h5>
+          <p class="text-muted mb-2">$95</p>
+          <button class="btn btn-outline-primary w-100 add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-5 pt-4 pb-2 bg-light">
+    <div class="container">
+      <div class="footer-top d-flex flex-wrap gap-2 mb-4">
+        <input type="email" class="form-control w-auto" placeholder="Email Address" />
+        <button class="btn btn-dark subscribe-btn">Sign Up</button>
+      </div>
+
+      <div class="footer-bottom row text-start text-md-start">
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+          <h5>Shop</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Equipment</a></li>
+            <li><a href="#">By Activity</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+          <h5>Contact</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Telegram</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+          <h5>About</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Responsibility</a></li>
+            <li><a href="#">Technology & Innovation</a></li>
+            <li><a href="#">Our Stories</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center mt-3 small text-muted">
+        © 2025 Ecommerce. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+   <script src="theme.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
