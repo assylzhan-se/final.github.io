@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Top Bar */
+.top-bar {
+  width: 100%;
+  height: 40px;
+  background-color: #8580eb;
+}
+
+/* Navbar */
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #dcdcdc;
+}
+.logo-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Carousel */
+.carousel-item img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.carousel-caption h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.carousel-caption p {
+  font-size: 1.1rem;
+}
+
+/* Fix for carousel icons (white visible on light bg) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 220px;
+  }
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Product cards */
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.footer-top button:hover {
+  background-color: #8580eb;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+}
