@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop - Ecommerce</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Remixicon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="page2.css" />
+  <link rel="stylesheet" href="../dark-theme.css" />
+</head>
+<body>
+  <div class="top-bar"></div>
+
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex align-items-center" href="/midterm/index.html">
+        <div class="logo me-2"></div>
+        <span class="brand">Ecommerce</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="page3.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="page4.html">Payment</a></li>
+          <li class="nav-item"><a class="nav-link" href="page5.html">About Us</a></li>
+        </ul>
+
+        <form id="searchForm" class="d-flex me-3 align-items-center" onsubmit="return false;">
+          <i class="ri-search-line me-2"></i>
+          <input id="searchInput" class="form-control" type="search" placeholder="Search">
+        </form>
+
+        <div class="d-flex align-items-center gap-3">
+          
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <main class="container-fluid my-4">
+    <div class="row">
+      <aside class="col-lg-3 col-md-4 mb-4 px-4">
+        <h5>Filters <a href="#" id="clearFilters" class="clear small ms-2">Clear filters</a></h5>
+
+        <p class="mt-3 fw-semibold">Search results:</p>
+        <div id="searchResultCount" class="small text-muted mb-3">Showing all products</div>
+
+        <p class="fw-semibold">Categories</p>
+        <div id="categories" class="mb-3"></div>
+
+        <p class="fw-semibold">Price range</p>
+        <div class="d-flex gap-2 align-items-center mb-3">
+          <input id="priceMin" type="number" class="form-control form-control-sm" placeholder="Min" min="0" />
+          <input id="priceMax" type="number" class="form-control form-control-sm" placeholder="Max" min="0" />
+          <button id="priceFilterBtn" class="btn btn-sm btn-outline-secondary">Apply</button>
+        </div>
+      </aside>
+
+      <!-- Products -->
+      <section class="col-lg-9 col-md-8 px-4">
+        <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+          <div class="d-flex align-items-center">
+            <label class="me-2 fw-semibold mb-0">Sort By:</label>
+            <select id="sortSelect" class="form-select w-auto">
+              <option value="popular" selected>Popular</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
+          </div>
+
+          <div class="text-muted small">Products: <span id="productsCount">0</span></div>
+        </div>
+
+        <div id="productGrid" class="row g-4 product-grid">
+          <!-- rendered by JS -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer mt-5 pt-4 pb-2 bg-light">
+    <div class="container">
+      <div class="newsletter d-flex flex-wrap gap-2 mb-4">
+        <input id="newsletterEmail" type="email" class="form-control w-auto" placeholder="Email Address" />
+        <button id="newsletterBtn" class="btn btn-dark">Sign Up</button>
+      </div>
+
+      <div class="footer-links row text-start text-md-start">
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+          <h5>Shop</h5>
+          <p>Equipment</p>
+          <p>By Activity</p>
+          <p>Gift Cards</p>
+          <p>Sale</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+          <h5>Contact</h5>
+          <p>Help Center</p>
+          <p>Telegram</p>
+          <p>Instagram</p>
+          <p>WhatsApp</p>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-3">
+          <h5>About</h5>
+          <p>About Us</p>
+          <p>Responsibility</p>
+          <p>Technology & Innovation</p>
+          <p>Our Stories</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-3 small text-muted">
+        © 2025 Ecommerce. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast container -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1080">
+    <div id="cartToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Added to cart
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap bundle (includes Popper) -->
+   <script src="../theme.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="page2.js"></script>
+</body>
+</html>
