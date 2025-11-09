@@ -1,0 +1,252 @@
+/* dark-theme.css - Создайте этот файл в корневой папке проекта */
+
+/* Основная темная тема */
+.dark-theme {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+/* Навбар */
+.dark-theme .navbar {
+  background-color: #2d2d2d !important;
+  border-bottom: 1px solid #404040 !important;
+}
+
+.dark-theme .navbar-brand,
+.dark-theme .nav-link {
+  color: #e0e0e0 !important;
+}
+
+.dark-theme .nav-link:hover {
+  color: #8580eb !important;
+}
+
+.dark-theme .nav-link.active {
+  color: #8580eb !important;
+  border-bottom-color: #8580eb !important;
+}
+
+/* Кнопка темы */
+.dark-theme #theme-toggle {
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+.dark-theme #theme-toggle:hover {
+  background-color: #8580eb;
+  border-color: #8580eb;
+  color: white;
+}
+
+/* Карточки */
+.dark-theme .card,
+.dark-theme .product-card {
+  background-color: #2d2d2d !important;
+  color: #e0e0e0;
+  border-color: #404040;
+}
+
+.dark-theme .product-card:hover {
+  box-shadow: 0 8px 20px rgba(133, 128, 235, 0.3);
+}
+
+/* Футер */
+.dark-theme footer,
+.dark-theme .footer,
+.dark-theme .bg-light {
+  background-color: #2d2d2d !important;
+  color: #e0e0e0;
+}
+
+.dark-theme footer a,
+.dark-theme footer p {
+  color: #b0b0b0 !important;
+}
+
+.dark-theme footer a:hover,
+.dark-theme footer p:hover {
+  color: #8580eb !important;
+}
+
+/* Формы */
+.dark-theme .form-control {
+  background-color: #3a3a3a;
+  color: #e0e0e0;
+  border-color: #4a4a4a;
+}
+
+.dark-theme .form-control:focus {
+  background-color: #404040;
+  color: #e0e0e0;
+  border-color: #8580eb;
+  box-shadow: 0 0 0 0.2rem rgba(133, 128, 235, 0.25);
+}
+
+.dark-theme .form-control::placeholder {
+  color: #888;
+}
+
+/* Кнопки */
+.dark-theme .btn-outline-primary {
+  color: #8580eb;
+  border-color: #8580eb;
+}
+
+.dark-theme .btn-outline-primary:hover {
+  background-color: #8580eb;
+  color: white;
+}
+
+.dark-theme .btn-dark {
+  background-color: #8580eb;
+  border-color: #8580eb;
+}
+
+.dark-theme .btn-dark:hover {
+  background-color: #6f63f6;
+  border-color: #6f63f6;
+}
+
+.dark-theme .btn-outline-secondary {
+  color: #b0b0b0;
+  border-color: #555;
+}
+
+.dark-theme .btn-outline-secondary:hover {
+  background-color: #555;
+  color: white;
+}
+
+.dark-theme .btn-outline-danger {
+  color: #ff6b6b;
+  border-color: #ff6b6b;
+}
+
+.dark-theme .btn-outline-danger:hover {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+/* Алерты */
+.dark-theme .alert-light {
+  background-color: #3a3a3a;
+  color: #e0e0e0;
+  border-color: #4a4a4a;
+}
+
+.dark-theme .alert-info {
+  background-color: #2d4a5a;
+  color: #b8e0f0;
+  border-color: #3a5a6a;
+}
+
+/* Категории */
+.dark-theme .category-chip {
+  background-color: #3a3a3a;
+  color: #e0e0e0;
+  border-color: #4a4a4a;
+}
+
+.dark-theme .category-chip.active {
+  background-color: #8580eb;
+  color: white;
+}
+
+/* Корзина */
+.dark-theme .cart-item {
+  background-color: #2d2d2d;
+  border-color: #404040 !important;
+}
+
+.dark-theme .shipping-box {
+  background-color: #2d2d2d !important;
+}
+
+/* Текст */
+.dark-theme .text-muted {
+  color: #888 !important;
+}
+
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4,
+.dark-theme h5,
+.dark-theme h6 {
+  color: #e0e0e0;
+}
+
+/* Границы */
+.dark-theme .border,
+.dark-theme .border-bottom,
+.dark-theme .border-top {
+  border-color: #404040 !important;
+}
+
+/* Карусель */
+.dark-theme .carousel-caption h1,
+.dark-theme .carousel-caption p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Badges */
+.dark-theme .badge.bg-primary {
+  background-color: #8580eb !important;
+}
+
+/* Форма оплаты */
+.dark-theme .product-image {
+  background-color: #3a3a3a;
+}
+
+/* Рейтинг */
+.dark-theme .stars i.active {
+  color: #ffcc00;
+}
+
+.dark-theme .stars i {
+  color: #555;
+}
+
+/* Shadow */
+.dark-theme .shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Toast */
+.dark-theme .toast {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+}
+
+.dark-theme .text-bg-success {
+  background-color: #1e4d2b !important;
+  color: #90ee90 !important;
+}
+
+/* Form check */
+.dark-theme .form-check-input {
+  background-color: #3a3a3a;
+  border-color: #555;
+}
+
+.dark-theme .form-check-input:checked {
+  background-color: #8580eb;
+  border-color: #8580eb;
+}
+
+/* Image box (About page) */
+.dark-theme .image-box {
+  border: 1px solid #404040;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dark-theme .navbar-toggler {
+    border-color: #555;
+  }
+  
+  .dark-theme .navbar-toggler-icon {
+    filter: invert(1);
+  }
+}
