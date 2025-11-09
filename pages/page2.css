@@ -1,0 +1,137 @@
+/* Base reset / typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: #fff;
+  color: #333;
+}
+.top-bar {
+  width: 100%;
+  height: 40px;
+  background: #8580eb;
+}
+.logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #d8d8d8;
+}
+.brand {
+  font-weight: 600;
+}
+.category-box {
+  width: 100%;
+  height: 160px;
+  background: #e0e0e0;
+  border-radius: 10px;
+}
+
+/* Product Card */
+.product-card {
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+.product-img {
+  width: 100%;
+  height: 150px;
+  background: #e6e6e6;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Product meta */
+.product-meta {
+  flex: 1 1 auto;
+}
+.product-title {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+.product-price {
+  font-weight: 700;
+  color: #111;
+}
+
+/* Add to cart button */
+.btn-add {
+  margin-top: 0.6rem;
+  width: 100%;
+}
+
+/* Footer links */
+footer a, footer p {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+}
+footer p:hover {
+  text-decoration: underline;
+}
+
+.newsletter button:hover {
+  background: #5865f2;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* categories chips */
+.category-chip {
+  display: inline-block;
+  padding: 6px 10px;
+  margin: 4px 6px 4px 0;
+  border-radius: 999px;
+  background: #f2f2f2;
+  cursor: pointer;
+  font-size: 13px;
+  border: 1px solid transparent;
+}
+.category-chip.active {
+  background: #6f63f6;
+  color: white;
+  border-color: rgba(0,0,0,0.06);
+}
+
+/* Toast custom width */
+.toast {
+  min-width: 200px;
+}
+
+/* cart count badge */
+#cart-count {
+  font-size: 12px;
+  padding: 0.25rem 0.4rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+  .product-img {
+    height: 140px;
+  }
+}
